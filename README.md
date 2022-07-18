@@ -37,3 +37,11 @@ WHERE (de.to_date = '9999-01-01') AND (e.birth_date BETWEEN '1960-01-01' AND '19
 The number of employees born in each of these five years is shown in this pivot table output:
 
 ![Years1960-1964](Years1960-1964.png)
+
+This analyst also considered expanding the mentorship eligibility program to consider employees born in the five years prior to 1965, 1966 to 1970, using this line of code:
+
+WHERE (de.to_date = '9999-01-01') AND (e.birth_date BETWEEN '1966-01-01' AND '1970-12-31')
+
+However, this analysis revealed that PH has no employees born during those years. In fact, according to the data in this database, PH has no employees born after 1965, as shown by this query 
+
+Thus, because PH has no employees born within the past 56 years, PH will be expected to lose a considerably high percentage of its employees due to retirement very soon. PH will be more severely impacted by upcoming retirements than most other companies, who have a greater mix of younger employees who are likely to stay around longer.
