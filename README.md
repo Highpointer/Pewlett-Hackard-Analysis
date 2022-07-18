@@ -33,3 +33,7 @@ The analysis shows that there are 1,549 employees born in 1965, who could be goo
 It would be a good idea to expand the mentorship eligibility to include employees born in the five years before 1965, from 1960 through 1964. There is a considerably larger number of employees born during each of these five years, compared to 1965. Changing this line of code SQL identifies the employees born from 1960 to 1964:
 
 WHERE (de.to_date = '9999-01-01') AND (e.birth_date BETWEEN '1960-01-01' AND '1964-12-31')
+
+The number of employees born in each of these five years is shown in this pivot table output:
+
+![Years1960-1964](Years1960-1964.png)
