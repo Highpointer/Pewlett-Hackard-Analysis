@@ -8,7 +8,11 @@ PH Employees born during the year 1965 would be eligible for a mentoring program
 
 # Four major points from analysis deliverables
 
-1) There are 72,458 employees at PH born from the beginning of 1952 until the end of 1955. 
+1) There are 72,458 employees at PH born from the beginning of 1952 until the end of 1955. This table shows the most recent titles of these employees:
+
+![Retiring-Titles](Retiring-Titles.png)
+
+
 ![Unique-Titles](Unique-Titles.png)
 
 
