@@ -24,4 +24,12 @@ PH Employees born during the year 1965 would be eligible for a mentoring program
 
 ![Mentorship-Eligibility](Mentorship-Eligibility.png)
 
+# Summary
 
+Since the SQL analysis has identified 72,458 employees at PH born in the four calendar years surveyed, a time period from 67 to 70 years ago, PH is likely to lose many employees to retirement in the next few years. Over half of these roles will be in engineering and other technological positions, which are harder to fill than non-technical staff positions.
+
+The analysis shows that there are 1,549 employees born in 1965, who could be good candidates to mentor these employees. This number is small compared to the tens of thousands of jobs that need to be filled. 
+
+It would be a good idea to expand the mentorship eligibility to include employees born in the five years before 1965, from 1960 through 1964. There is a considerably larger number of employees born during each of these five years, compared to 1965. Changing this line of code SQL identifies the employees born from 1960 to 1964:
+
+WHERE (de.to_date = '9999-01-01') AND (e.birth_date BETWEEN '1960-01-01' AND '1964-12-31')
