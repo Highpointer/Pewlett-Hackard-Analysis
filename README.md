@@ -12,7 +12,7 @@ PH Employees born during the year 1965 would be eligible for a mentoring program
 
 ![Unique-Titles](Unique-Titles.png)
 
-2) These 72,458 employees have accumulated a total of 133,776 job titles. This is because many employees have had multiple job titles during their careers at PH, due to promotions and changes in their work responsibilities. For example, Summant Peac was hired as Assistant Engineer in 1985, promoted to Engineer in 1990, and then promoted to Senior Engineer in 1995 and has been working at that position for the past 27 years.
+2) These 72,458 employees have accumulated a total of 133,776 job titles. This is because many employees have had multiple job titles during their careers at PH, due to promotions and changes in their work responsibilities. For example, Sumant Peac was hired as Assistant Engineer in 1985, promoted to Engineer in 1990, and then promoted to Senior Engineer in 1995 and has been working at that position for the past 27 years.
 
 ![Retirement-Titles](Retirement-Titles.png) 
 
