@@ -16,7 +16,11 @@ PH Employees born during the year 1965 would be eligible for a mentoring program
 
 ![Retirement-Titles](Retirement-Titles.png) 
 
-![Unique-Titles](Unique-Titles.png)
-![Mentorship-Eligibility](Mentorship-Eligibility.png)
+3) Since most of these employees are highly experienced, over 70% of them have reached a level where they have earned "Senior" in their job title. As a reputable and renowned technology manufacturer, PH employs a high percentage of skilled technical people, so over 50% of these employees are classified as engineers. These numbers are derived from the numbers in this table:
 
 ![Retiring-Titles](Retiring-Titles.png)
+
+4) 
+![Mentorship-Eligibility](Mentorship-Eligibility.png)
+
+
