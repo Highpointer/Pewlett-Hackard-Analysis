@@ -16,13 +16,5 @@ PH Employees born during the year 1965 would be eligible for a mentoring program
 
 ![Retirement-Titles](Retirement-Titles.png) 
 
-![Retiring-Titles](Retiring-Titles.png)
-
-
 ![Unique-Titles](Unique-Titles.png)
-
-
-
-![Retirement-Titles](Retirement-Titles.png) 
-![Retiring-Titles](Retiring-Titles.png)
-![Unique-Titles](Unique-Titles.png)
+![Mentorship-Eligibility](Mentorship-Eligibility.png)
