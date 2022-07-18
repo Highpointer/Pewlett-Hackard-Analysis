@@ -38,7 +38,7 @@ The number of employees born in each of these five years is shown in this pivot 
 
 ![Years1960-1964](Years1960-1964.png)
 
-This analyst also considered expanding the mentorship eligibility program to consider employees born in the five years prior to 1965, 1966 to 1970, using this line of code:
+This analyst also considered expanding the mentorship eligibility program to consider employees born in the five years after 1965, 1966 to 1970, using this line of code:
 
 WHERE (de.to_date = '9999-01-01') AND (e.birth_date BETWEEN '1966-01-01' AND '1970-12-31')
 
