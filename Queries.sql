@@ -136,3 +136,55 @@ WHERE d.dept_name IN ('Sales', 'Development');
 
 -- 7.3.6 Create a Tailored List
 WHERE d.dept_name IN ('Sales', 'Development')
+
+-- 7.3.6 Create a Tailored List
+-- Using the ERD you created in this module as a reference and your knowledge of SQL queries, create a 
+-- Retirement Titles table that holds all the titles of employees who were born between January 1, 1952
+-- and December 31, 1955. Because some employees may have multiple titles in the database — for example,
+-- due to promotions—you’ll need to use the DISTINCT ON statement to create a table that contains the most 
+-- recent title of each employee. Then, use the COUNT() function to create a table that has the number of
+-- retirement-age employees by most recent job title. Finally, because we want to include only current
+-- employees in our analysis, be sure to exclude those employees who have already left the company.
+
+-- Deliverable 1: The Number of Retiring Employees by Title (50 points) --
+
+-- This query is written and executed to create a Retirement Titles table for
+-- employees who are born between January 1, 1952 and December 31, 1955. (10 pt/10 pt overall)
+SELECT e.emp_no, e.first_name, e.last_name, t.title, t.from_date, t.to_date
+INTO retirement_titles
+FROM employees as e
+INNER JOIN titles AS t ON (e.emp_no = t.emp_no)
+WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31') 
+ORDER BY e.emp_no
+-- The Retirement Titles table is exported as retirement_titles.csv (5 pt/15 pt overall)
+
+-- This query is written and executed to create a Unique Titles table that contains the
+-- employee number, first and last name, and most recent title. (15 pt/30 pt overall)
+SELECT DISTINCT ON (r.emp_no) r.emp_no, r.first_name, r.last_name, r.title
+INTO unique_titles FROM retirement_titles as r
+WHERE (r.to_date = '9999-01-01')
+ORDER BY r.emp_no, r.to_date DESC;
+-- The Unique Titles table is exported as unique_titles.csv (5 pt/35 pt overall)
+
+-- This query is written and executed to create a Retiring Titles table that contains
+-- the number of titles filled by employees who are retiring. (10 pt/45 pt overall)
+SELECT COUNT(u.emp_no), u.title 
+INTO retiring_titles FROM unique_titles as u
+GROUP BY u.title ORDER BY COUNT(u.emp_no) DESC;
+-- The Retiring Titles table is exported as retiring_titles.csv (5 pt/50 pt overall)
+
+-- Deliverable 2: The Employees Eligible for the Mentorship Program (30 points) --
+-- Using the ERD you created in this module as a reference and your knowledge of
+-- SQL queries, create a mentorship-eligibility table that holds the current
+-- employees who were born between January 1, 1965 and December 31, 1965.
+
+-- This query is written and executed to create a Mentorship Eligibility table for current
+-- employees who were born between January 1, 1965 and December 31, 1965. (25 pt/75 pt overall)
+SELECT DISTINCT ON (e.emp_no) e.emp_no, e.first_name, e.last_name, e.birth_date, de.from_date, de.to_date, t.title
+INTO mentorship_eligibility
+FROM employees as e
+INNER JOIN dept_emp AS de ON (e.emp_no = de.emp_no)
+INNER JOIN titles AS t ON (e.emp_no = t.emp_no)
+WHERE (de.to_date = '9999-01-01') AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+ORDER BY e.emp_no;
+-- The Mentorship Eligibility table is exported and saved as mentorship_eligibilty.csv (5 pt/80 pt overall)
