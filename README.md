@@ -20,7 +20,8 @@ PH Employees born during the year 1965 would be eligible for a mentoring program
 
 ![Retiring-Titles](Retiring-Titles.png)
 
-4) 
+4) Since tens of thousands of PH employees may retire soon, it is imperative that PH hire more employees. These employees need to be trained and mentored so that they will have long, successful careers at PH. Experienced employees who are not eligible to retire yet, but may become eligible within the next 10 years, are good candidates to mentor these new employees. Employees born in the year 1965 (ten years younger than employees born in 1955) will be considered for this program. The SQL analysis identifies 1,549 employees born in 1965. An excerpt from this table is below:
+
 ![Mentorship-Eligibility](Mentorship-Eligibility.png)
 
 
