@@ -45,3 +45,5 @@ WHERE (de.to_date = '9999-01-01') AND (e.birth_date BETWEEN '1966-01-01' AND '19
 However, this analysis revealed that PH has no employees born during those years. In fact, according to the data in the database, PH has no employees born after 1965. 
 
 Thus, because PH has no employees born within the past 56 years, PH will be expected to lose a considerably high percentage of its employees due to retirement very soon. PH will be more severely impacted by upcoming retirements than most other companies, who have a greater mix of younger employees who are likely to stay around longer.
+
+It is my opinion that PH should also consider not pushing out all of the senior people, and provide opportunities for these experienced people to continue working as long as they are healthy and productive and continue to make quantifiable contributions to the company's bottom line.
